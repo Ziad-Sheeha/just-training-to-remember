@@ -1,0 +1,386 @@
+:root {
+	--Blue: #1d6df0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "DM Sans", sans-serif;
+}
+
+/* My Nav Decoration */
+
+.my-nav-a {
+	font-size: 1.3rem;
+	color: black !important;
+	font-weight: 500;
+	transition: all 0.3s ease-in-out;
+	background-color: white !important;
+}
+
+.my-nav-a:hover {
+	color: white !important;
+}
+
+nav img {
+	height: 10vh;
+}
+
+.nav-selecct {
+	background-color: rgb(255, 255, 255) !important;
+	box-shadow: 0px -3px 20px 0 #aeaeae;
+}
+
+nav ul li {
+	padding-right: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 786px) {
+	.my-nav-a {
+		width: 6rem;
+	}
+	nav ul li {
+		text-align: center;
+		padding: 5px;
+	}
+}
+
+.hvr-shutter-out-horizontal:before {
+	background-color: #1d6df0 !important;
+}
+
+/* Start hero */
+
+.Hero {
+	height: 100vh;
+	background-color: #292d33;
+}
+
+.heroText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding-top: 20%;
+	font-weight: 900;
+}
+
+.heroText h1 {
+	font-size: 7rem;
+}
+
+.heroText p {
+	letter-spacing: 5px;
+	font-weight: 100;
+}
+.heroText span {
+	color: var(--Blue);
+}
+
+@media (min-width: 320px) and (max-width: 756px) {
+	.heroText {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		padding-top: 70%;
+		font-weight: 900;
+		text-align: center;
+	}
+	.heroText h1 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+}
+
+/* Start page 2 */
+
+.page-2 {
+	height: 85vh;
+	background-color: #f2f2f2;
+}
+
+.cont-cards {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100vw;
+	padding-top: 3rem;
+}
+
+.cont-cards::after {
+	content: "";
+	background-color: var(--Blue);
+	width: 912px;
+	height: 4px;
+	border-radius: 20px;
+	margin: 3rem auto;
+}
+
+.cont-cards div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 14rem;
+	width: 20%;
+	box-shadow: 0px -11px 0px 0px #1d6df0;
+	background-color: white;
+	transition: all 0.6s ease-in-out;
+	cursor: pointer;
+}
+
+.cont-cards div:hover {
+	color: white !important;
+	box-shadow: none;
+}
+
+.cont-cards div:hover i {
+	color: white !important;
+}
+
+.cont-cards div i {
+	margin-top: 1rem;
+	font-size: 3.5rem;
+	color: var(--Blue);
+	margin-bottom: 1.2rem;
+	transition: all 0.6s ease-in-out;
+}
+
+.hvr-sweep-to-bottom:before {
+	background-color: var(--Blue) !important;
+}
+
+.We-do {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.We-do div {
+	padding-top: 1rem;
+}
+
+.We-do div h1 {
+	color: var(--Blue);
+}
+
+.We-do div h3 {
+	font-weight: 700;
+}
+
+.We-do p {
+	color: #949494;
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+	.page-2 {
+		height: 260vh;
+	}
+	.cont-cards {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.cont-cards div {
+		margin-top: 1.5rem;
+		width: 60%;
+	}
+	.cont-cards::after {
+		width: 200px;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 769px) {
+	.page-2 {
+		height: 160vh;
+	}
+	.cont-cards div {
+		margin-top: 2.5rem;
+		width: 45%;
+	}
+}
+
+/* Start page 3 */
+
+.page-3 {
+	height: 70vh;
+	background-color: #292d33;
+}
+
+.page-3_cont {
+	height: 100%;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.rightSecPage3 h3,
+.Aboutt {
+	color: var(--Blue);
+}
+
+.page-3 button {
+	letter-spacing: 2px;
+	color: white;
+	font-weight: 500;
+	font-size: 1.3rem;
+	background-color: var(--Blue);
+	border: none;
+	width: 12rem;
+	padding: 15px;
+	border-radius: 1000px;
+	transition: all 0.5s ease-in-out;
+}
+
+.page-3 button:hover {
+	background-color: white;
+	color: var(--Blue);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.page-3 {
+		height: 160vh;
+		text-align: center;
+	}
+	.page-3_cont {
+		padding-top: 2rem;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+	}
+	.page-3_cont h1 {
+		font-size: 2.5rem !important;
+	}
+	.l-sec {
+		margin-top: 4rem;
+		order: 11;
+	}
+	.rightSecPage3 {
+		margin-top: 2rem;
+		order: -11;
+	}
+	.page-3 button {
+		font-size: 1rem;
+		padding: 10px;
+		width: 10rem;
+	}
+}
+
+@media (min-width: 1023px) and (max-width: 1025px) {
+	.page-2 {
+		height: 100vh;
+	}
+}
+
+/* Start page 4 */
+
+.page-4 {
+	height: 100vh;
+}
+
+.cont-page-4 {
+	justify-content: center;
+	align-items: center;
+}
+
+.page-4-right {
+	text-align: center;
+}
+
+.page-4-right img {
+	float: right;
+	margin-top: -5rem;
+}
+
+.page-4-right h4 {
+	margin-top: 1.5rem;
+	font-weight: 700;
+	color: var(--Blue);
+}
+
+.page-4-right span {
+	letter-spacing: 2px;
+	color: #949494;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.page-4 {
+		height: 150vh;
+	}
+	.page-4-right {
+		padding-top: 9rem;
+	}
+	.page-4-right h1 {
+		font-size: 2.1rem;
+	}
+}
+
+/* Start page 5 */
+
+.page-5 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+	background-color: #292d33;
+	color: white;
+}
+
+.page-5 h1 {
+	font-size: 4rem;
+	color: var(--Blue);
+}
+
+.brandd {
+	margin-top: 5rem;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.brand2 {
+	margin-top: 2.5rem;
+}
+
+.page-5 p {
+	margin-top: 1.5rem;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.page-5 {
+		height: 150vh;
+	}
+	.page-5 h1 {
+		margin-top: 4rem !important;
+		font-size: 2.1rem;
+		color: var(--Blue);
+	}
+	.brandd img {
+		width: 130px;
+	}
+	.brandd {
+		height: 30vh;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.img2{
+		margin: 20px 0;
+	}
+}
